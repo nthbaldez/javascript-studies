@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validations</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+    
+<body>
+    
+        <form action="" name="formulario">
+            
+            
+            <h2>Preecha os campos</h2>
+                <div class="input">
+                    
+                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome" onfocusout="validations.validateName()" required>
+                    <label>Nome</label>
+                    <span class="error"></span>
+
+                </div>
+                
+                <div class="input">
+                    <input type="email" id="email" name="email" placeholder="Insira seu e-mail" required>
+                    <label for="email">E-mail</label>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input">
+                    <input type="text" id="cpf" name="cpf" placeholder="Somente números" onfocusout="" required>
+                    <label for="email">CPF</label>
+                    <span class="error"></span>
+                </div>
+                
+
+                <button type="submit" onsubmit="validations.validateCpf()">Validar</button>
+                
+            
+        </form>
+    
+        <script src="scripts.js"></script>
+</body>
+</html>

@@ -52,11 +52,4 @@ label {
     cursor: pointer;
 }
 
-.resultado {
-    border: 1px solid;
-    height: 50px;
-    width: 200px;
-    font-size: 40px;
-    margin: 17px;
-    
-}
+

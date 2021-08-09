@@ -9,6 +9,4 @@ btn.addEventListener('click', () => {
     
     dec.innerHTML = `<div>${num}</div>`;
     
-    
-
 });
